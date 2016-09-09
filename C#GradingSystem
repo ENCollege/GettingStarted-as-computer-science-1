@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int number;
+
+            Console.Write("Number? ");
+            number = Convert.ToInt32(Console.ReadLine());
+
+            if ((number == 9) || (number == 10))
+                Console.WriteLine("Outstanding");
+            else if ((number == 7) || (number == 8))
+                Console.WriteLine("Very Good");
+            else if (number == 6)
+                Console.WriteLine("Good"); else if (number == 5)
+                Console.WriteLine("Average");
+            else if ((number >= 0) && (number <= 4))
+                Console.WriteLine("Poor");
+            else
+                Console.WriteLine("No valid number entered");
+            Console.ReadLine();
+        }
+    }
+}
