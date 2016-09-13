@@ -1,0 +1,37 @@
+using System;
+public class exercise046 
+{
+    public static void Main() 
+    {
+        int num; 
+         
+        int total=0, amount=0;
+        int maximum, minimum;
+ 
+        Console.Write("number? ");
+        num = Convert.ToInt32(Console.ReadLine());
+        maximum = num;
+        minimum = num;
+ 
+        while (num!=0) 
+        {
+            amount++;
+            total += num;
+ 
+            if (num > maximum)
+                maximum = num;
+ 
+            if (num < minimum)
+                minimum = num;
+ 
+            Console.WriteLine(
+                "Total={0} Amount={1} Average={2} maximum={3} minimum={4}",
+                total, amount, total/amount, maximum, minimum);
+ 
+            Console.Write("number? ");
+            num = Convert.ToInt32(Console.ReadLine());
+        }
+        Console.WriteLine("Bye!");
+        Console.ReadLine();
+    }
+}
