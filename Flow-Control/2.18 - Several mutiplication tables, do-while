@@ -1,0 +1,28 @@
+using System;
+public class SeveraltimesTable
+{
+    public static void Main()
+    {
+        int num, multiplier;
+  
+        num = 2;
+             
+        do
+        {
+         
+            multiplier = 1;
+            do
+            {
+                Console.WriteLine("{0} x {1} = {2}", 
+                    num, multiplier, num*multiplier);
+                multiplier++;
+            }
+            while (multiplier <= 10);
+          
+            Console.WriteLine();
+            num++;
+             
+        } while (num <= 6);
+        Console.ReadLine();
+    }   
+ }
