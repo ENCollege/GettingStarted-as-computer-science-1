@@ -1,0 +1,15 @@
+using System;
+public class Exercise024
+{
+    public static void Main()
+    {
+        int n=1;
+         
+        while (n <= 10)
+        {
+            Console.Write("{0} ", n);
+            n++;
+            Console.ReadLine();
+        }
+    }
+}
