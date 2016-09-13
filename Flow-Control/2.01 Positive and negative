@@ -1,0 +1,18 @@
+using System;
+public class PositiveAndNegative
+{
+    public static void Main() 
+    {
+        int a;
+  
+        Console.Write("Enter a number: ");
+        a=Convert.ToInt32(Console.ReadLine());
+ 
+        if(a>0)
+            Console.WriteLine("is positive"); 
+        if(a<0)
+            Console.WriteLine("is negative")
+        Console.ReadLine();
+        }
+      }
+  }
