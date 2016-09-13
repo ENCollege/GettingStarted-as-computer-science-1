@@ -1,0 +1,9 @@
+public class FirstProgram
+{
+    public static void Main( )
+    {
+    //output to screen with writeline and "string in"
+         System.Console.WriteLine("Hello");
+         System.Console.WriteLine("World!");
+    }
+}
