@@ -1,0 +1,18 @@
+using System;
+public class Exercise022
+{
+    public static void Main()
+    {
+        int number;
+         
+        do
+        {
+            Console.Write("Enter a number: ");
+            number = Convert.ToInt32(Console.ReadLine());
+             
+            Console.WriteLine(number * 10);
+        }
+        while (number != 0);
+        Console.ReadLine();
+    }
+}
