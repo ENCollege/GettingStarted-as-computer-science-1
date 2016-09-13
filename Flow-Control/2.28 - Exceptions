@@ -18,13 +18,15 @@ public class exercise054
             division = number1 / number2;
              
             Console.WriteLine("{0} / {1} = {2}", number1, number2, division);
+            Console.ReadLine();
         }
          
         catch (DivideByZeroException)
         {
             Console.WriteLine("Cannot divide by Zero");
-            return;
             Console.ReadLine();
+            return;
+           
         }
          
     }
