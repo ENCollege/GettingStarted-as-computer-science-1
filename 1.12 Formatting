@@ -1,0 +1,35 @@
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n;
+
+            Console.WriteLine("Enter a digit: ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            // Part A: "n n n n" using Write
+            Console.Write(n);
+            Console.Write(" ");
+            Console.Write(n);
+            Console.Write(" ");
+            Console.Write(n);
+            Console.Write(" ");
+            Console.Write(n);
+            Console.WriteLine();
+
+            // Part B: "nnnn" using Write
+            Console.Write(n);
+            Console.Write(n);
+            Console.Write(n);
+            Console.WriteLine(n);
+            Console.WriteLine();
+
+            // Part C: "n n n n" using {0}
+            Console.WriteLine("{0} {0} {0} {0}", n);
+
+            // Part D: "nnnn" using {0}
+            Console.WriteLine("{0}{0}{0}{0}", n);
+            Console.ReadLine();
+        }
+    }
+}
