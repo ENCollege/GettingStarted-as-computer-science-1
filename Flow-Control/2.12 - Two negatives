@@ -1,0 +1,22 @@
+using System;
+public class exercise028
+{
+    public static void Main()
+    {
+        int number1;
+        int number2;
+         
+        Console.Write("number 1: ");
+        number1=Convert.ToInt32(Console.ReadLine());
+         
+        Console.Write("number 2: ");
+        number2=Convert.ToInt32(Console.ReadLine());
+         
+        if( (number1 < 0) && (number2 < 0) )
+            Console.WriteLine("the numbers are negative");
+             
+        if( ! ( (number1 < 0) && (number2 < 0) ) )
+            Console.WriteLine("the numbers are NOT negative");
+        Console.ReadLine();
+    }
+}
