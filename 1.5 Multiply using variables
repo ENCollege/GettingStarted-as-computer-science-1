@@ -1,0 +1,18 @@
+public class MultiplyUsingVariables
+{
+    public static void Main()
+    {
+        int number1;
+        int number2;
+        int multiplication;
+ 
+        System.Console.WriteLine("Enter 1st number");
+        number1 = System.Convert.ToInt32(System.Console.ReadLine());
+        System.Console.WriteLine("Enter 2nd number");
+        number2 = System.Convert.ToInt32(System.Console.ReadLine());
+ 
+        multiplication = number1 * number2;
+        System.Console.WriteLine("The multiplication is:");
+        System.Console.WriteLine(multiplication);
+    }
+}
