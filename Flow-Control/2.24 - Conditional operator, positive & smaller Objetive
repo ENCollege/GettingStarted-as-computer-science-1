@@ -1,0 +1,53 @@
+using System;
+public class Conditional
+{
+    public static void Main()
+    {
+        int a, b;
+        string answer;
+ 
+        Console.Write("Enter the first number: ");
+        a = Convert.ToInt32(Console.ReadLine());
+         
+        Console.Write("Enter the second number: ");
+        b = Convert.ToInt32(Console.ReadLine());
+         
+        // ------ First number positive -------
+        // First, using "if"
+        if (a > 0)
+            Console.WriteLine("a is positive");
+        else
+            Console.WriteLine("a is not positive");
+         
+        // Second way: string and if
+        if (a > 0)
+            answer = "a is positive";
+        else
+            answer = "a is not positive";
+        Console.WriteLine(answer);
+         
+        // Finally, using conditional
+        answer = a > 0 ? "a is positive" : "a is not positive";
+        Console.WriteLine(answer);
+         
+         
+        // ------ Second number positive -------
+        // Conditional inside Write
+        Console.WriteLine(b > 0 ? 
+            "b is positive" : "b is not positive");
+             
+             
+        // ------ Both positive -------
+        // String and then if
+        answer = (a > 0) && (b > 0)? 
+            "both are positive" : "not both are positive";
+        Console.WriteLine(answer);
+         
+         
+        // ------ Smallest -------        
+        // Additional intermediate variable
+        int smallest = a < b ? a : b;
+        Console.WriteLine("Smallest: {0}", smallest);
+        Console.ReadLine();
+    }
+}
