@@ -1,0 +1,7 @@
+public class Division
+{
+  public static void Main()
+  { 
+    System.Console.WriteLine(24/5);
+  }
+}
