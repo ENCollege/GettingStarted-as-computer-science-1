@@ -1,0 +1,12 @@
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int age;
+            Console.Write("Enter a age ");
+            age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("You look younger than {0} ", age);
+            Console.ReadLine();
+        }
+    }
+}
