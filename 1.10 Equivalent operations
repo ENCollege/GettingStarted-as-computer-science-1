@@ -1,0 +1,20 @@
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, num3;
+
+            Console.Write("Enter first number....");
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter second number....");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter third number....");
+            num3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Result of operation between {0}, {1} and {2}, (a+b)·c is {3} and a·b + a·c is {4}", num1, num2, num3, ((num1 + num2) * num3), (num1 * num3 + num2 * num3));
+            Console.ReadLine();
+        }
+    }
+}
